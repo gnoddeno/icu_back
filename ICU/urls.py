@@ -20,4 +20,5 @@ import backend.views as views
 #from rest_framework_simplejwt.views import TokenObtainPairView
 urlpatterns = [
     path('upload_video/', views.upload_and_process_video, name='upload_video'),
+    path('admin/', admin.site.urls, name='admin'),
 ]
